@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Contact Form</title>
+<link href="contact.css" type="text/css" rel="stylesheet">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+   <body>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+   
+    <div class="nav">
+        <div class="link"><a href="home.html">Home</a></div>
+         <div class="link"><a href="about.html">About Me</a></div>
+   </body>
+   <div class="container">
+       <h1 class="brand">Contact Form</h1>
+       <div class="wrapper">
+           <div class="Info">
+               <h3>Contact</h3>
+               <ul>
+               <li><i class="fa fa-envelope-o" aria-hidden="true"></i>sicetshanolusindiso2@gmail.com</li>
+               <li><i class="fa fa-phone" aria-hidden="true"></i>068 133 7893</li>
+               <li><i class="fa fa-road" aria-hidden="true"></i>14200 Tshatshu Road,
+               Cape Town</li>
+               </ul>
+           </div>
+           <div class="contact">
+               <h3>Email me</h3>
+               <div class="alert">You message has been sent</div>
+               <form id="contactForm">
+               <form action="sicetshanolusindiso2@gmail.com" method="post" enctype="text/plain">
+                   <p>
+                       <label>Name</label>
+                       <input type="text" name="name" id="name">
+                   </p>
+                   <p>
+                       <label>Email Address</label>
+                       <input type="text" name="email" id="email">
+                   </p>
+                   <p>
+                       <label>Phone Number</label>
+                       <input type="text" name="phone" id="phone">
+                   </p>
+                   <p class="full">
+                       <label>Message</label>
+                       <textarea name="message" rows="5" id="message"></textarea>
+                   </p>
+                   <p class="full">
+                       <button type="submit">Submit</button>
+                   </p>
+                   <div class="g-recaptcha" data-sitekey="6LczktgUAAAAAJd02hMyZvN11RxwoWFJJBnUmUyy"></div>
+               </form>
+               </form>
+           </div>
+       </div>
+   </div>
+   <script src="/__/firebase/7.8.2/firebase-analytics.js"></scripT>
+   <script src="main.js"></script>
+</body>
+   </html>
